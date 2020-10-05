@@ -61,7 +61,7 @@ public class Player : MonoBehaviour
                 rb.velocity = new Vector2(0, rb.velocity.y);
             }
 
-            if (Input.GetKeyDown(KeyCode.Space) && (!isJumping))
+            if (Input.GetKeyDown(KeyCode.UpArrow) && (!isJumping))
             {
                 jump.Play();
                 rb.AddForce(Vector2.up * 350);
@@ -148,6 +148,14 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "JumpMushroom")
         {
             rb.AddForce(Vector2.up * 500);
+            if (isJumping)
+            {
+                animator.Play("Jump", -1, 0f);
+            }
+            else 
+            {
+                isJumping = true;
+            }
         }
 
         if (collision.gameObject.tag == "Checkpoint")
