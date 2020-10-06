@@ -1,3 +1,3 @@
 # DinoExplorer
 
-GDD: https://docs.google.com/document/d/1Grfi1uK7hhaNQBecXZi_kuFR1Z8oFuGyW_WT9PE3bp0/edit?usp=sharing
+GDD: https://github.com/IagoMendes/DinoExplorer/blob/master/Game%20Design%20Document.pdf
